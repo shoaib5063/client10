@@ -20,7 +20,7 @@ A modern, full-stack car rental web application that connects car owners with re
 
 ## Live Demo
 
-🌐 **[carrentph10.surge.sh](http://carrentph10.surge.sh)**
+🌐 **[http://carrent-10e.surge.sh/](http://carrent-10e.surge.sh/)**
 
 ---
 
