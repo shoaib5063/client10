@@ -2,7 +2,10 @@ import axios from 'axios';
 import { auth } from '../firebase/config';
 
 // Create axios instance with base URL
-const baseURL = import.meta.env.VITE_API_URL || 'https://server10-mu.vercel.app/api';
+// Use relative path in production to use Netlify proxy, absolute URL in development
+const baseURL = import.meta.env.MODE === 'production' 
+  ? '/api' 
+  : (import.meta.env.VITE_API_URL || 'https://server10-mu.vercel.app/api');
 console.log('API Base URL:', baseURL);
 
 const api = axios.create({
