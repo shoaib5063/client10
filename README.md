@@ -45,7 +45,7 @@ npm install
 
 3. Create `.env` file in the root directory:
 ```env
-VITE_API_URL=http://localhost:5000/api
+VITE_API_URL=https://server10-mu.vercel.app/api
 VITE_FIREBASE_API_KEY=your_firebase_api_key
 VITE_FIREBASE_AUTH_DOMAIN=your_project.firebaseapp.com
 VITE_FIREBASE_PROJECT_ID=your_project_id
@@ -107,7 +107,7 @@ client/
 
 Create a `.env` file based on `.env.example`:
 
-- `VITE_API_URL` - Backend API URL (default: http://localhost:5000/api)
+- `VITE_API_URL` - Backend API URL (default: https://server10-mu.vercel.app/api)
 - `VITE_FIREBASE_API_KEY` - Firebase API key
 - `VITE_FIREBASE_AUTH_DOMAIN` - Firebase auth domain
 - `VITE_FIREBASE_PROJECT_ID` - Firebase project ID
