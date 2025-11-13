@@ -2,8 +2,11 @@ import axios from 'axios';
 import { auth } from '../firebase/config';
 
 // Create axios instance with base URL
+const baseURL = import.meta.env.VITE_API_URL || 'https://server10-mu.vercel.app/api';
+console.log('API Base URL:', baseURL);
+
 const api = axios.create({
-  baseURL: import.meta.env.VITE_API_URL || 'https://server10-mu.vercel.app/api',
+  baseURL,
   headers: {
     'Content-Type': 'application/json',
   },
