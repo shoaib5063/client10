@@ -45,7 +45,7 @@ const Navbar = () => {
           </Link>
 
           {/* Desktop Navigation - Each button on separate plate */}
-          <div className="hidden md:flex items-center space-x-16">
+          <div className="hidden md:flex items-center gap-8">
             {allLinks.map((link) => (
               <NavLink
                 key={link.path}
