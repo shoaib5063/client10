@@ -88,7 +88,7 @@ const CarCard = ({ car, showActions = false, onUpdate, onDelete }) => {
           ) : (
             <Link
               to={`/car/${car._id}`}
-              className="block w-full px-5 py-3 bg-gray-900 text-white text-center rounded-xl hover:bg-gray-800 hover:shadow-lg transition-all font-bold text-base transform hover:scale-105"
+              className="block w-full px-6 py-4 bg-gray-900 text-white text-center rounded-xl hover:bg-gray-800 hover:shadow-lg transition-all font-bold text-lg transform hover:scale-105"
             >
               {isAvailable ? '🚗 View Details & Book' : '👁️ View Details'}
             </Link>
