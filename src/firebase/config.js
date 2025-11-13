@@ -10,6 +10,12 @@ const firebaseConfig = {
   appId: import.meta.env.VITE_FIREBASE_APP_ID
 };
 
+// Debug: Log if env vars are missing
+if (!firebaseConfig.apiKey) {
+  console.error('Firebase environment variables are not set!');
+  console.log('Available env vars:', Object.keys(import.meta.env));
+}
+
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
 
